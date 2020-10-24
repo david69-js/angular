@@ -1,0 +1,26 @@
+@import '../../../mixins/mixin\ copy';
+@import '../../../mixins/colors';
+textarea{
+    height: 215px;
+}
+
+.card{
+    background: transparent !important;
+    border: none;
+    margin-bottom: 50px;
+    .card-title{
+        font-family: $font3;
+        font-weight: bold;
+    }
+    .card-text{
+        font-family: $font4;
+        color: rgb(87, 87, 87);
+    }
+}
+
+.spacing{
+    margin-top: 30px;
+}
+.container-fluid{
+    @include color;
+}

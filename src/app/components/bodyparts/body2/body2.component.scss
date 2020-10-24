@@ -1,0 +1,18 @@
+@import '../../../mixins/mixin';
+@import '../../../mixins/colors';
+
+.bg2{
+    background-image: url('../../../../assets/img/background/fondo.jpg');
+    color: $white;
+    .row{
+        text-align: center;
+        .card{
+            @include style1(transparent,transparent, 100px, 50px)
+        }
+    }
+}
+@media screen and (max-width: 990px){
+    .card{
+        @include style1(transparent,transparent, 100px !important, 5px !important)
+    } 
+}
